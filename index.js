@@ -9,7 +9,7 @@ function driversWithRevenueOver(drivers, amount){
 
 
 function driverNamesWithRevenueOver(drivers, revenue){
-  const topDrivers = drivers.map(function(driver){
+  const topDrivers = drivers.filter(function(driver){
     if (driver.revenue > revenue){
       return driver.name;
     }
