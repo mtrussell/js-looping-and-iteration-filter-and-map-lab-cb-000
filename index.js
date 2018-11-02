@@ -17,6 +17,7 @@ function driverNamesWithRevenueOver(drivers, revenue){
   const driversNames = topDrivers.map(function(driver){
     return driver.name;
   });
+  return driversNames;
 }
 
 
