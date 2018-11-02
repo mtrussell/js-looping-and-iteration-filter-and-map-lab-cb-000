@@ -30,7 +30,7 @@ function exactMatch(drivers, match){
 }
 
 
-function exactMatchToList(){
+function exactMatchToList(drivers, match){
   const matchKey = Object.keys(match);
   const topDrivers = drivers.filter(function(driver){
     return driver[matchKey[0]] === match[matchKey[0]];
