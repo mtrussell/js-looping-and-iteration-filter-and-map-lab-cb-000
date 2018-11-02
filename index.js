@@ -22,7 +22,10 @@ function driverNamesWithRevenueOver(drivers, revenue){
 
 
 function exactMatch(){
-
+  const topDrivers = drivers.filter(function(driver){
+    return driver.revenue === amount;
+  });
+  return topDrivers;
 }
 
 
