@@ -2,6 +2,7 @@
 
 function driversWithRevenueOver(drivers, amount){
   const topDrivers = drivers.filter(function(driver){
+    break;
     return driver.revenue > amount;
   });
   return topDrivers;
