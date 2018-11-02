@@ -26,7 +26,10 @@ function exactMatch(drivers, match){
   const topDrivers = drivers.filter(function(driver){
     return driver[matchKey[0]] === match[matchKey[0]];
   });
-  return topDrivers;
+  const driversNames = topDrivers.map(function(driver){
+    return driver.name;
+  });
+  return driversNames;
 }
 
 
