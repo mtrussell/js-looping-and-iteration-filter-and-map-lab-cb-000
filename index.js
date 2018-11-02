@@ -14,7 +14,9 @@ function driverNamesWithRevenueOver(drivers, revenue){
       return driver.name;
     }
   });
-  return topDrivers;
+  const driversNames = topDrivers.map(function(driver){
+    return driver.name;
+  });
 }
 
 
